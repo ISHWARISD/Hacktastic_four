@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaggle Data Display</title>
+  <title>JobPostings</title>
+  <link rel="stylesheet" href="jobPostings.css">
 </head>
 <body>
-  <h1>Kaggle Data Display</h1>
-  <ul id="kaggleList"></ul>
+  <h1>jobPostings.</h1>
+  <form id="filterForm">
+    <div class="filters">
+      <label for="locationFilter">Location:</label>
+      <input type="text" id="locationFilter" name="locationFilter">
+
+      <label for="domainFilter">Domain:</label>
+      <input type="text" id="domainFilter" name="domainFilter">
+
+      <label for="durationFilter">Duration:</label>
+      <input type="text" id="durationFilter" name="durationFilter">
+      <button type="button" id="applyFiltersBtn">Apply Filters</button>
+    </div>
+  </form>
+
+  <div id="jobList" class="job-container"></div>
   <script src="script.js"></script>
 </body>
 </html>
+

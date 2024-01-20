@@ -1,0 +1,100 @@
+/* public/styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*{
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    font-size:2.5em;
+    margin-left:1%;
+}
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:white;
+    border-radius:5px;
+}
+.job-title{
+    display: flex;
+    flex-direction: column;
+    background-color: #F5D3DD;
+    padding:2px;
+}
+.company-name{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size:1.10em;
+    font-weight: bold;
+}
+.job-box {
+border: 1px solid #E42278;
+padding: 10px;
+margin: 0 auto;
+margin-top:20px;
+width: 95%;
+background-color: #F9F9F9;
+border-radius:5px;
+transition: transform 0.3s ease-in-out;
+}
+.job-box:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+.job-box:last-child{
+    margin-bottom:20px;
+}
+
+.job-title {
+font-weight: bold;
+font-size: 1.5em;
+}
+.job-info {
+margin-top: 5px;
+}
+.filters{
+    width:95%;
+    margin:0 auto;
+
+}
+label{
+    font-size:1.10em;
+}
+input{
+    margin-right:10px;
+    height:16px;
+    
+}
+#locationFilter,
+#domainFilter,
+#durationFilter {
+  width: 250px; /* Adjust the width as needed */
+  padding: 8px; /* Optional: Add padding for better visual appearance */
+}
+#applyFiltersBtn {
+    background-color: black; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    border: 1 px solid black; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style on hover */
+  }
+  
+  /* Hover effect */
+#applyFiltersBtn:hover {
+    background-color:white;
+    color:black; 
+    border: 1 px solid black;/* Darker green on hover */
+  }
+.apply-now-button{
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border:1px black solid;
+    
+}
+.apply-now-button:hover{
+    background:black;
+    color:white;
+    cursor:pointer;
+}
